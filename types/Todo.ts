@@ -1,10 +1,9 @@
-export type TTodoStore = {
+export interface TTodoStore {
   todoList: TTodo[];
-};
+}
 
-export type TTodo = {
-  id: number;
+export interface TTodo {
+  id: string;
   title: string;
-  description: string;
   completed: boolean;
-};
+}
